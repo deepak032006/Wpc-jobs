@@ -171,9 +171,9 @@ export default function CompanyStep() {
               }`}
             >
               <option value="">Select type</option>
-              <option value="worker">Skill Worker</option>
-              <option value="temporary_worker">Temporary Worker</option>
-              <option value="ministry_of_religion">Ministry of Religion</option>
+              <option value="worker">Skill Worker {"(T2)"}</option>
+              <option value="temporary_worker">Temporary Worker {"(T5)"}</option>
+              <option value="ministry_of_religion">Minister of Religion {"(T2)"}</option>
               {/* <option value="graduate">Graduate</option>
               <option value="graduate_dependent">Graduate Dependent</option>
               <option value="skilled_worker">Skilled Worker</option>

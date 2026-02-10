@@ -91,13 +91,13 @@ export default function SelectTargetRolesStep() {
           Target Roles
         </h2>
         <p className="text-[15px] lg:text-[18px] text-[#4D4D4D] mb-6">
-          Select the sectors and roles you're interested in
+          Select the roles you're interested in
         </p>
 
         <form onSubmit={handleSubmit(onSubmit)} className="space-y-6">
           <div>
             <label className="block text-[18px] font-medium mb-4">
-              Sectors
+              Roles
             </label>
 
             <div className="flex flex-wrap gap-3">
@@ -159,7 +159,7 @@ export default function SelectTargetRolesStep() {
           <div className="bg-white rounded-[14px] shadow-lg max-w-2xl w-full max-h-[80vh] flex flex-col">
             <div className="p-6 border-b">
               <div className="flex justify-between items-center">
-                <h3 className="text-[22px] font-bold text-[#111]">All Sectors</h3>
+                <h3 className="text-[22px] font-bold text-[#111]">All Roles</h3>
                 <button
                   onClick={() => setShowModal(false)}
                   className="text-[#4D4D4D] hover:text-[#111] text-2xl"

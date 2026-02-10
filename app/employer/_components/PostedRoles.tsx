@@ -137,8 +137,8 @@ if (loading) {
                         </svg>
                         <span className="break-all min-w-0">{job.job_location}</span>
                       </span>
-                      <span className="whitespace-nowrap">{job.shortlisted} Applied</span>
-                      <span className="whitespace-nowrap">{job.applied} Shortlisted</span>
+                      {/* <span className="whitespace-nowrap">{job.shortlisted} Applied</span>
+                      <span className="whitespace-nowrap">{job.applied} Shortlisted</span> */}
                     </div>
                   </div>
                   <div className="flex items-center gap-2 flex-shrink-0">
@@ -153,11 +153,11 @@ if (loading) {
     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
   </svg>
                     </button>
-                    <button onClick={() => router.push(`/employer/dashboard/edit/${job.id}`)} className="p-1.5 hover:bg-[#F3F4F6] rounded">
+                   {job.status !== "open" &&  <button onClick={() => router.push(`/employer/dashboard/edit/${job.id}`)} className="p-1.5 hover:bg-[#F3F4F6] rounded">
                       <svg className="w-4.5 h-4.5 text-[#6B7280]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.572L16.732 3.732z" />
                       </svg>
-                    </button>
+                    </button>}
                     <button className="p-1.5 hover:bg-[#F3F4F6] rounded">
                       <svg className="w-4.5 h-4.5 text-[#6B7280]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 5v.01M12 12v.01M12 19v.01M12 6a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z" />

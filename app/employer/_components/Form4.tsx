@@ -253,8 +253,8 @@ const Form4 = ({ formData, setFormData, step, setStep }: FormType) => {
           onClick={() => router.push(`/employer/dashboard`)}
           className="px-4 sm:px-9 h-13 w-full sm:w-auto md:w-70 xl:w-90 rounded-[9px] border border-[#0852C9] text-[#0852C9] text-sm sm:text-base font-semibold hover:bg-blue-50 transition"
         >
-          <span className="hidden sm:inline">Back</span>
-          <span className="inline sm:hidden">← Back</span>
+          <span className="hidden sm:inline">Back to Dashboard</span>
+          <span className="inline sm:hidden">← Back to Dashboard</span>
         </button>
 
         <button
