@@ -8,7 +8,7 @@ const getCookie = (name: string): string | null => {
   return match ? decodeURIComponent(match[2]) : null;
 };
 
-// Helper to set a cookie
+
 const setCookie = (name: string, value: string, days: number = 7) => {
   const expires = new Date();
   expires.setTime(expires.getTime() + days * 24 * 60 * 60 * 1000);
