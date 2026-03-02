@@ -23,14 +23,12 @@ const Sidebar = () => {
 
   const routes = [
     { id: 1, name: 'Dashboard', route: '/employer/dashboard', icon: LayoutDashboard },
-    { id: 3, name: 'Post Role', route: '/employer/dashboard/post-role', icon: Briefcase },
-    { id: 2, name: 'Matches', route: '/employer/dashboard/matches', icon: Users },
-    { id: 4, name: 'Interview', route: '/employer/dashboard/interview', icon: CalendarCheck },
-    { id: 9, name: 'Offers', route: '/employer/dashboard/offers', icon: User2 },
-    { id: 5, name: 'Shortlisted Candidates', route: '/employer/dashboard/candidates', icon: UserCheck },
-    { id: 6, name: 'Pricing', route: '/employer/dashboard/pricing', icon: CreditCard },
-    { id: 7, name: 'Help Center', route: '/employer/dashboard/help', icon: HelpCircle },
-    { id: 8, name: 'Settings', route: '/employer/dashboard/settings', icon: Settings },
+    { id: 3, name: 'Post Compliance', route: '/employer/dashboard/post-role', icon: Briefcase },
+    { id: 2, name: 'HR Validation', route: '/employer/dashboard/hr-validation', icon: Users },
+    { id: 4, name: 'Call Agents', route: '/employer/dashboard/call-agents', icon: CalendarCheck },
+    { id: 5, name: 'Staff List', route: '/employer/dashboard/staff-list', icon: CalendarCheck },
+    { id: 6, name: 'Records', route: '/employer/dashboard/records', icon: User2 },
+    
   ];
 
   const toggleMobileMenu = () => {
